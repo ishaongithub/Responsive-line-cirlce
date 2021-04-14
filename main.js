@@ -17,7 +17,7 @@ var last_position_of_x, last_position_of_y;
     if (width<992){
         document.getElementById("myCanvas").width=new_width;
         document.getElementById("myCanvas").height=new_height;
-        document.body.style.pverflow="hidden";
+        document.body.style.overflow="hidden";
     }
 
     canvas.addEventListener("touchstart", my_touchstart);
@@ -27,6 +27,7 @@ var last_position_of_x, last_position_of_y;
    
         color = document.getElementById("color").value;
         width_of_line = document.getElementById("width_of_line").value;
+        radius = document.getElementById("radius").value;
     
 
         console.log("my_touchstart");
